@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  school_id: 1
+  artifact_id: 1
+  description: MyText
+  reference_id: 1
+
+two:
+  school_id: 1
+  artifact_id: 1
+  description: MyText
+  reference_id: 1

@@ -25,6 +25,15 @@
   <div id="container"> 
     <header> 
  <h1>The Archaeology of Medical Education</h1>
+ <div id="navigation">
+ <ul>
+  <li><%= link_to_unless_current "Home", root_path %></li>
+  <li><%= link_to_unless_current "Categories", categories_path %></li>
+  <li><%= link_to_unless_current "Artifacts", artifacts_path %></li>
+  <li><%= link_to_unless_current "Schools", schools_path %></li>
+  <li><%= link_to_unless_current "References", references_path %></li>
+ </ul>
+ </div>
     </header> 
     
     <div id="main"> 
@@ -48,7 +57,7 @@
   <![endif]--> 
  <%= javascript_include_tag "profiling/yahoo-profiling.min", "profiling/config" %>
 
-<% if Rails.env == "production" %> 
+<% if Rails.env.production? %> 
   <script> 
    var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']]; 
    (function(d, t) {

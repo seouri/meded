@@ -1,6 +1,8 @@
 Meded::Application.routes.draw do
+  resources :references
+  resources :categories
+  resources :artifacts
   devise_for :users
-
   resources :schools
 
   # The priority is based upon order of creation:

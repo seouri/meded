@@ -90,11 +90,30 @@ div#main {
   padding: 1em;
 }
 
+#navigation ul {
+  margin: 0;
+  padding: 0;
+}
+#navigation li {
+  margin: 0;
+  padding: 0 1em 0 0;
+  list-style: none;
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+}
+#navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+#navigation a:hover {
+  text-decoration: underline;
+}
 
-
-
-
-
+td, th {
+  border: 1px solid #666;
+  padding: 0.25em;
+}
 
 /* 
  * print styles
